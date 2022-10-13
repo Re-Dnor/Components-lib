@@ -1,11 +1,12 @@
 ## Components library
 
 ### Description
-Creating a library of your own components
+Custom components library for personal development with storybook interface for documentation.
 
 ### Used technologies
 - TypeSript
 - React
+- Storybook
 - Vite
 
 ### Geting started
