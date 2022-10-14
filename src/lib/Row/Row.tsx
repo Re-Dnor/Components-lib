@@ -12,7 +12,7 @@ export type Props = {
   fill?: boolean;
 };
 
-function UXRow({ children, justifyContent, alignItems, fill = true }: Props) {
+function Row({ children, justifyContent, alignItems, fill = true }: Props) {
   console.log(justifyContent, alignItems)
   return (
     <StyledRow justifyContent={ justifyContent } alignItems={ alignItems } fill={fill}>
@@ -21,4 +21,4 @@ function UXRow({ children, justifyContent, alignItems, fill = true }: Props) {
   );
 }
 
-export default UXRow;
+export default Row;

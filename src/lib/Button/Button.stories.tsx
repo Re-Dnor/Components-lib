@@ -1,37 +1,38 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import UXButton, { Variant_Color } from "./Button";
+import Button, { Variant_Color } from "./Button";
 import "../../index.css";
 
 // описание компонента и ссылка на него
-const meta: ComponentMeta<typeof UXButton> = {
+const meta: ComponentMeta<typeof Button> = {
   title: "Design System/Button",
-  component: UXButton,
+  component: Button,
 };
 export default meta;
 
 // истории
 // дефолтная кнопка
-export const Default: ComponentStoryObj<typeof UXButton> = {
+export const Default: ComponentStoryObj<typeof Button> = {
   args: {
     children: "primary",
   },
 };
 // заблокированная кнопка
-export const Disabled: ComponentStoryObj<typeof UXButton> = {
+export const Disabled: ComponentStoryObj<typeof Button> = {
   args: {
     children: "disabled",
     disabled: true,
   },
 };
 // успех
-export const SuccessVariant: ComponentStoryObj<typeof UXButton> = {
+export const SuccessVariant: ComponentStoryObj<typeof Button> = {
   args: {
     children: "success",
     variant: Variant_Color.Success,
+    size: 'large'
   },
 };
 // кнопка с обработчиком нажатия
-export const WithClickHandler: ComponentStoryObj<typeof UXButton> = {
+export const WithClickHandler: ComponentStoryObj<typeof Button> = {
   args: {
     children: "click me",
     onClick: () => alert("button clicked"),

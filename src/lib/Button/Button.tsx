@@ -8,11 +8,7 @@ export enum Variant_Color {
   Danger = "danger",
 }
 
-export enum Size {
-  Large = 'large',
-  Medium = 'medium',
-  Small = 'small',
-}
+export type Size = 'large' | 'medium' | 'small'
 
 export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: Variant_Color;
@@ -21,17 +17,22 @@ export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: Size;
 };
 
-function UXButton({ children, variant, disabled, onClick }: Props) {
+function Button({ children, variant, disabled, size, onClick }: Props) {
   const handleClick: MouseEventHandler<HTMLButtonElement> = (e) => {
         if (disabled) return;
         onClick && onClick(e);
       };
 
   return (
-    <StyledButton variant={ variant } onClick={ handleClick } disabled={ disabled }>
+    <StyledButton
+    variant={ variant }
+    onClick={ handleClick }
+    disabled={ disabled }
+    size={size}
+    >
       { children }
     </StyledButton>
   );
 }
 
-export default UXButton;
+export default Button;

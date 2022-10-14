@@ -11,7 +11,7 @@ export type Props = {
   alignItems?: Align;
 };
 
-function UXColumn({ children, alignItems, justifyContent }: Props) {
+function Column({ children, alignItems, justifyContent }: Props) {
   return ( 
     <StyledColumn alignItems={alignItems} justifyContent={justifyContent}>
       { children }
@@ -19,4 +19,4 @@ function UXColumn({ children, alignItems, justifyContent }: Props) {
   );
 }
 
-export default UXColumn;
+export default Column;

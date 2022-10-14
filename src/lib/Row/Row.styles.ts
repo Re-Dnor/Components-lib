@@ -7,4 +7,5 @@ export const StyledRow = styled.div<Props>`
   align-items: ${(props) => props.alignItems};
 	justify-content: ${(props) => props.justifyContent};
   width: ${(props) => props.fill ? '100%' : null}
+  margin: 20px
 `;
