@@ -6,6 +6,7 @@ export const StyledRow = styled.div<Props>`
   display: flex;
   align-items: ${(props) => props.alignItems};
 	justify-content: ${(props) => props.justifyContent};
-  width: ${(props) => props.fill ? "100%" : null}
-  margin: 20px
+  width: ${(props) => props.fill ? "100%" : null};
+  gap: ${(props) => props.gap ? "10px" : null};
+  margin: 10px 0;
 `;

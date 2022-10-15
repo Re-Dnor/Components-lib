@@ -10,8 +10,8 @@ function App() {
   };
 
   return (
-    <Column alignItems="start">
-      <Row alignItems="center" justifyContent="space-between">
+    <Column alignItems="start" justifyContent="center">
+      <Row alignItems="center" justifyContent="center" fill gap>
         <Button variant={ Variant_Color.Primary } onClick={ () => onClickes(Variant_Color.Primary) }> Primary </Button>
         <Button variant={ Variant_Color.Success } onClick={ () => onClickes(Variant_Color.Success) }> Success </Button>
         <Button variant={ Variant_Color.Warning } onClick={ () => onClickes(Variant_Color.Warning) }> Warning </Button>
