@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Props } from './Column';
+import styled from "styled-components";
+import { Props } from "./Column";
 
 
 export const StyledColumn = styled.div<Props>`

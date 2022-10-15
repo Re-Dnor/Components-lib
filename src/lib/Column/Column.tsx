@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
-import { StyledColumn } from './Column.styles';
+import { StyledColumn } from "./Column.styles";
 
-type Justify = 'start' | 'center' | 'space-between' | 'space-around' | 'space-evenly' | 'end';
-type Align = 'stretch' | 'center' | 'start' | 'end';
+type Justify = "start" | "center" | "space-between" | "space-around" | "space-evenly" | "end";
+type Align = "stretch" | "center" | "start" | "end";
 
 
 export type Props = {

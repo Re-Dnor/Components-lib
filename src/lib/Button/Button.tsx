@@ -1,14 +1,14 @@
-import { StyledButton } from './Button.styles';
-import { ButtonHTMLAttributes, MouseEventHandler } from "react";
+import React, { ButtonHTMLAttributes, MouseEventHandler } from "react";
+import { StyledButton } from "./Button.styles";
 
 export enum Variant_Color {
   Primary = "primary",
   Success = "success",
   Warning = "warning",
-  Danger = "danger",
+  Danger = "danger"
 }
 
-export type Size = 'large' | 'medium' | 'small'
+export type Size = "large" | "medium" | "small";
 
 export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: Variant_Color;

@@ -1,6 +1,7 @@
+import React from "react";
 import { Variant_Color } from "./lib";
-import Button from './lib/Button/Button';
-import Row from './lib/Row/Row';
+import Button from "./lib/Button/Button";
+import Row from "./lib/Row/Row";
 import Column from "./lib/Column/Column";
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
       </Row>
 
     </Column>
-  )
+  );
 }
 
 export default App;

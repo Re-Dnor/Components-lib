@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Variant_Color, Props } from './Button';
+import styled from "styled-components";
+import { Variant_Color, Props } from "./Button";
 
 export const StyledButton = styled.button<Props>`
   background-color: var(
@@ -22,16 +22,16 @@ export const StyledButton = styled.button<Props>`
   opacity: ${(props) => (props.disabled ? "0.6" : "1")};
   outline: none;
   padding: ${(props) => {
-    if (props.size === 'large') return '0.8rem'
-    if (props.size === 'medium') return '0.6rem'
-    if (props.size === 'small') return '0.3rem'
-    return '0.6rem'
+    if (props.size === "large") return "0.8rem";
+    if (props.size === "medium") return "0.6rem";
+    if (props.size === "small") return "0.3rem";
+    return "0.6rem";
   }}};
   font-size: ${(props) => {
-    if (props.size === 'large') return '1rem'
-    if (props.size === 'medium') return '0.8rem'
-    if (props.size === 'small') return '0.7rem'
-    return '0.8rem'
+    if (props.size === "large") return "1rem";
+    if (props.size === "medium") return "0.8rem";
+    if (props.size === "small") return "0.7rem";
+    return "0.8rem";
   }}};
   transition: 0.4s;
 
