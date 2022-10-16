@@ -8,6 +8,7 @@ Custom components library for personal development with storybook interface for 
 - React
 - Storybook
 - Vite
+- Eslint and Prettier
 
 ### Geting started
 Start dev-server: <code>npm run dev</code><br>
