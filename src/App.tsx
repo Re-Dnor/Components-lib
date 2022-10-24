@@ -4,6 +4,7 @@ import Button from "./lib/Button/Button";
 import Row from "./lib/Row/Row";
 import Column from "./lib/Column/Column";
 import Input from "./lib/Input/Input";
+import Close from "./lib/Close/Close";
 
 function App() {
   const onClickes= (variant: string) => {
@@ -19,8 +20,15 @@ function App() {
         <Button variant={ Variant_Color.Danger } onClick={ () => onClickes(Variant_Color.Danger) }> Danger </Button>
         <Button  onClick={ () => onClickes(Variant_Color.Danger) } disabled> Disabled </Button>
       </Row>
-      <Input />
-      <Row><Input/></Row>
+      <Input/>
+      <Row fill justifyContent="center"><Input large/></Row>
+      <Row gap>
+        <Input/>
+        <Input large/>
+      </Row>
+      <Row gap>
+        <Close color="warning"/>
+      </Row>
     </Column>
   );
 }
