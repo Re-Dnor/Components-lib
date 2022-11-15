@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Props } from "./Input";
 
-export const StyledInput = styled.input<Props>`
-  height: ${(props) => props.large ? "40px" : "30px"};
+type StyledInputProps = Omit<Props, "label">;
+
+export const StyledInput = styled.input<StyledInputProps>`
+  height: ${(props) => (props.large ? "45px" : "35px")};
   font-size: 15px;
-  width: 80%;
+  width: 100%;
   padding-left: 15px;
   border-radius: 15px;
   border: 2px solid grey;
-  transition: .7s;
-  &: focus {
-    background-color: rgb(235, 235, 235);
-  }
+  transition: 0.3s;
+  margin-bottom: 20px;
 `;

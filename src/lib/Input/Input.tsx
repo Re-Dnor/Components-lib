@@ -1,21 +1,21 @@
 import React from "react";
 import { StyledInput } from "./Input.styles";
+import { StyledLabel } from "./Label.styles";
 
 export type Props = {
+  label: string;
+  name: string;
   type?: string;
-  name?: string;
   value?: string;
   large?: boolean;
 };
 
-function Input({ type, name, value, large }: Props) {
+function Input({ label, name, type, value, large }: Props) {
   return (
-  <StyledInput
-  type={ type }
-  name={ name }
-  value={ value }
-  large={ large }
-  />
+    <div style={{ position: "relative", width: "40%" }}>
+      <StyledLabel>{label}</StyledLabel>
+      <StyledInput type={type} name={name} value={value} large={large} />
+    </div>
   );
 }
 
