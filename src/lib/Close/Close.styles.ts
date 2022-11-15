@@ -8,7 +8,7 @@ export const StyledClose = styled.button<Props>`
   background-color: white;
   position: relative;
   z-index: 1;
-  margin: 20px auto;
+  margin: 10px auto;
   cursor: pointer;
 
   &: before {

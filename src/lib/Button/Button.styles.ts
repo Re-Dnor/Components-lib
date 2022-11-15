@@ -10,9 +10,7 @@ export const StyledButton = styled.button<Props>`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   color: var(
     ${(props) =>
-      props.variant &&
-      (props.variant === Variant_Color.Success ??
-        props.variant === Variant_Color.Warning)
+      props.variant && (props.variant === Variant_Color.Success ?? props.variant === Variant_Color.Warning)
         ? "--dark"
         : "--light"}
   );

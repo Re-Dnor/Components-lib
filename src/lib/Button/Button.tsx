@@ -19,18 +19,13 @@ export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 function Button({ children, variant, disabled, size, onClick }: Props) {
   const handleClick: MouseEventHandler<HTMLButtonElement> = (e) => {
-        if (disabled) return;
-        onClick && onClick(e);
-      };
+    if (disabled) return;
+    onClick && onClick(e);
+  };
 
   return (
-    <StyledButton
-    variant={ variant }
-    onClick={ handleClick }
-    disabled={ disabled }
-    size={size}
-    >
-      { children }
+    <StyledButton variant={variant} onClick={handleClick} disabled={disabled} size={size}>
+      {children}
     </StyledButton>
   );
 }

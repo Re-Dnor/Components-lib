@@ -4,7 +4,7 @@ import { StyledClose } from "./Close.styles";
 export type Color = "primary" | "danger" | "success" | "warning";
 
 export type Props = {
-  color?: Color;
+  color: Color;
   large?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
@@ -14,13 +14,7 @@ function Close({ color, large, onClick }: Props) {
     onClick && onClick(e);
   };
 
-  return ( 
-    <StyledClose
-    color={color}
-    large={large}
-    onClick={ handleClick }
-    />
-  );
+  return <StyledClose color={color} large={large} onClick={handleClick} />;
 }
 
 export default Close;

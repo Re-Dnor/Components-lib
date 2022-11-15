@@ -2,14 +2,11 @@ import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import Input from "./Input";
 import "../../index.css";
 
-
 const meta: ComponentMeta<typeof Input> = {
   title: "Design System/Input",
   component: Input
 };
 export default meta;
-
-
 
 export const Default: ComponentStoryObj<typeof Input> = {
   args: {
