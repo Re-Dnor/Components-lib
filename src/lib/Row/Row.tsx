@@ -9,13 +9,16 @@ export type Props = {
   children?: ReactNode | ReactNode[];
   justifyContent?: Justify;
   alignItems?: Align;
-  fill?: boolean | SCCheck;
+  width?: string | undefined;
   gap?: boolean | SCCheck;
 };
 
-function Row({ children, justifyContent, alignItems, fill, gap }: Props) {
+function Row({ children, justifyContent, alignItems, width, gap }: Props) {
+  if (!width) {
+    width = "50%";
+  }
   return (
-    <StyledRow justifyContent={justifyContent} alignItems={alignItems} fill={fill ? 1 : 0} gap={gap ? 1 : 0}>
+    <StyledRow justifyContent={justifyContent} alignItems={alignItems} width={width} gap={gap ? 1 : 0}>
       {children}
     </StyledRow>
   );

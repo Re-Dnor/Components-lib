@@ -12,7 +12,7 @@ export type Props = {
 
 function Input({ label, name, type, value, large }: Props) {
   return (
-    <div style={{ position: "relative", width: "40%" }}>
+    <div style={{ position: "relative", width: "100%" }}>
       <StyledLabel>{label}</StyledLabel>
       <StyledInput type={type} name={name} value={value} large={large} />
     </div>
