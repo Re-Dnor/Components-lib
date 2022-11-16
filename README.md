@@ -1,4 +1,4 @@
-## [Components library](https://components-lib-six.vercel.app/?path=/story/)
+## [Components library](https://components-lib-bay.vercel.app/)
 
 ### Description
 Custom components library for personal development with storybook interface for documentation.
