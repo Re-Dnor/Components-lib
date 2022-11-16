@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { StyledColumn } from "./Column.styles";
+import { StyledBox } from "./Box.styles";
 
 type Justify = "start" | "center" | "space-between" | "space-around" | "space-evenly" | "end";
 type Align = "stretch" | "center" | "start" | "end";
@@ -10,12 +10,12 @@ export type Props = {
   alignItems?: Align;
 };
 
-function Column({ children, alignItems, justifyContent }: Props) {
+function Box({ children, alignItems, justifyContent }: Props) {
   return (
-    <StyledColumn alignItems={alignItems} justifyContent={justifyContent}>
+    <StyledBox alignItems={alignItems} justifyContent={justifyContent}>
       {children}
-    </StyledColumn>
+    </StyledBox>
   );
 }
 
-export default Column;
+export default Box;
