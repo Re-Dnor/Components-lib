@@ -12,10 +12,10 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/lib/index.ts"),
+      entry: path.resolve(__dirname, "src/index.tsx"),
       name: "Components lib",
       formats: ["es", "umd"],
-      fileName: (format) => `Component-lib.${format}.js`,
+      fileName: (format) => `main.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "styled-components"],
