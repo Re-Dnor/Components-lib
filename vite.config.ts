@@ -14,8 +14,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.tsx"),
       name: "Components lib",
-      formats: ["es", "umd"],
-      fileName: (format) => `main.${format}.js`,
+      fileName: "main",
     },
     rollupOptions: {
       external: ["react", "react-dom", "styled-components"],
