@@ -11,11 +11,7 @@ export default defineConfig({
     }),
   ],
   build: {
-    lib: {
-      entry: path.resolve(__dirname, "src/index.tsx"),
-      name: "Components lib",
-      fileName: "main",
-    },
+    sourcemap: true,
     rollupOptions: {
       external: ["react", "react-dom", "styled-components"],
       output: {
