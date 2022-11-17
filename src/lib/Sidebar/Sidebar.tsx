@@ -1,18 +1,8 @@
+import { SidebarProps } from "../types/Sidebar.types";
 import { StyledSidebar } from "./Sidebar.styles";
 import { StyledSidebarBtn, StyledSidebarSpan } from "./SidebarItems.styles";
 
-type Props = {
-  list: string[];
-  setCurrentForm: (from: string) => void;
-  currentForm: string;
-};
-
-export type SidebarBtnProps = {
-  onClick: () => void;
-  active: boolean;
-};
-
-function Sidebar({ list, setCurrentForm, currentForm }: Props) {
+export function Sidebar({ list, setCurrentForm, currentForm }: SidebarProps) {
   const handleChangeCurrentForm = (form: string) => {
     setCurrentForm(form);
   };
@@ -31,5 +21,3 @@ function Sidebar({ list, setCurrentForm, currentForm }: Props) {
     </StyledSidebar>
   );
 }
-
-export default Sidebar;

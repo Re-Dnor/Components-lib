@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Props } from "./Row";
+import { RowProps } from "../types/Row.types";
 
-export const StyledRow = styled.div<Props>`
+export const StyledRow = styled.div<RowProps>`
   display: flex;
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};

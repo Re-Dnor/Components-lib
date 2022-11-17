@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Props } from "./Close";
+import { CloseProps } from "../types/Close.types";
 
-export const StyledClose = styled.button<Props>`
+export const StyledClose = styled.button<CloseProps>`
   width: 40px;
   height: 40px;
   border: 0;

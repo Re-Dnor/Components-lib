@@ -1,12 +1,6 @@
-import { ReactNode } from "react";
+import { TitleProps } from "../types/Title.types";
 import { StyledTitle } from "./Title.styles";
 
-export type Props = {
-  children: ReactNode;
-};
-
-function Title({ children }: Props) {
+export function Title({ children }: TitleProps) {
   return <StyledTitle>{children}</StyledTitle>;
 }
-
-export default Title;

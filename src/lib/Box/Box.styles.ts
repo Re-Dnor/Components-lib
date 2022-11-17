@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Props } from "./Box";
+import { BoxProps } from "../types/Box.types";
 
-export const StyledBox = styled.div<Props>`
+export const StyledBox = styled.div<BoxProps>`
   display: flex;
   flex-direction: column;
   align-items: ${(props) => props.alignItems};

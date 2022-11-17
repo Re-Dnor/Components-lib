@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { Props } from "./Input";
-
-type StyledInputProps = Omit<Props, "label">;
+import { StyledInputProps } from "../types/Input.types";
 
 export const StyledInput = styled.input<StyledInputProps>`
   height: ${(props) => (props.large ? "45px" : "35px")};

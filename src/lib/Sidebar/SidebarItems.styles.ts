@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SidebarBtnProps } from "./Sidebar";
+import { SidebarBtnProps } from "../types/Sidebar.types";
 
 export const StyledSidebarSpan = styled.span`
   display: block;
