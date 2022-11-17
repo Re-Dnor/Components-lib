@@ -1,8 +1,6 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Row from "./Row";
-import Button from "../Button/Button";
+import { Row, Button } from "../index";
 import "../../index.css";
-
 
 const meta: ComponentMeta<typeof Row> = {
   title: "Design System/Row",
@@ -10,10 +8,13 @@ const meta: ComponentMeta<typeof Row> = {
 };
 export default meta;
 
-
 export const Default: ComponentStoryObj<typeof Row> = {
   args: {
-    children: <><Button>First button</Button> <Button>Second button</Button></>,
+    children: (
+      <>
+        <Button>First button</Button> <Button>Second button</Button>
+      </>
+    ),
     gap: true
   }
 };

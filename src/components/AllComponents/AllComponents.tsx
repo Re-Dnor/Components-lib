@@ -1,9 +1,5 @@
-import { Variant_Color } from "../../lib";
-import Button from "../../lib/Button/Button";
-import Row from "../../lib/Row/Row";
-import Box from "../../lib/Box/Box";
-import Input from "../../lib/Input/Input";
-import Close from "../../lib/Close/Close";
+import { Box, Row, Button, Input, Close } from "../../lib/index";
+import { Variant_Color } from "../../lib/types/Button.types";
 
 function AllComponents() {
   return (

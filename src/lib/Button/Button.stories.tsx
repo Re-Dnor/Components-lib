@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Button, { Variant_Color } from "./Button";
+import { Button } from "../index";
+import { Variant_Color } from "../types/Button.types";
 import "../../index.css";
 
 const meta: ComponentMeta<typeof Button> = {

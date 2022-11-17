@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Sidebar from "./lib/Sidebar/Sidebar";
+import { Sidebar } from "./lib/index";
+import { sidebarList } from "./utils/sidebarList";
 import Content from "./components/Content/Content";
-
-const sidebarList = ["Home", "Test form", "All components"];
 
 function App() {
   const [currentForm, setCurrentForm] = useState<string>("Home");

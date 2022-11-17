@@ -1,7 +1,5 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Box from "./Box";
-import Row from "../Row/Row";
-import Button from "../Button/Button";
+import { Box, Button, Row } from "../index";
 import "../../index.css";
 
 const meta: ComponentMeta<typeof Box> = {

@@ -1,19 +1,7 @@
-import React, { ReactNode } from "react";
+import { RowProps } from "../types/Row.types";
 import { StyledRow } from "./Row.styles";
 
-type Justify = "start" | "center" | "space-between" | "space-around" | "space-evenly" | "end";
-type Align = "stretch" | "center" | "start" | "end";
-type SCCheck = 1 | 0;
-
-export type Props = {
-  children?: ReactNode | ReactNode[];
-  justifyContent?: Justify;
-  alignItems?: Align;
-  width?: string | undefined;
-  gap?: boolean | SCCheck;
-};
-
-function Row({ children, justifyContent, alignItems, width, gap }: Props) {
+export function Row({ children, justifyContent, alignItems, width, gap }: RowProps) {
   if (!width) {
     width = "50%";
   }
@@ -23,5 +11,3 @@ function Row({ children, justifyContent, alignItems, width, gap }: Props) {
     </StyledRow>
   );
 }
-
-export default Row;

@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Input from "./Input";
+import { Input } from "../index";
 import "../../index.css";
 
 const meta: ComponentMeta<typeof Input> = {

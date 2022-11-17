@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Variant_Color, Props } from "./Button";
+import { ButtonProps, Variant_Color } from "../types/Button.types";
 
-export const StyledButton = styled.button<Props>`
+export const StyledButton = styled.button<ButtonProps>`
   background-color: var(
     --${(props) => (props.disabled ? "gray" : props.variant ?? "primary")}
   );
