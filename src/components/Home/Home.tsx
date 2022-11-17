@@ -1,14 +1,12 @@
-import Column from "../../lib/Box/Box";
-import Row from "../../lib/Row/Row";
-import Title from "../../lib/Title/Title";
+import { Box, Row, Title } from "../../lib/index";
 
 function Home() {
   return (
-    <Column justifyContent="center" alignItems="center">
+    <Box justifyContent="center" alignItems="center">
       <Row justifyContent="center">
         <Title>Hello guys and welcome!</Title>
       </Row>
-    </Column>
+    </Box>
   );
 }
 
