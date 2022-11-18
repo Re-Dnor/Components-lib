@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Sidebar } from "./lib/index";
-import { sidebarList } from "./utils/sidebarList";
+import { sidebarList } from "./utils/todoList";
 import Content from "./components/Content/Content";
 
 function App() {

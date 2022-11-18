@@ -5,8 +5,9 @@ export const StyledSidebar = styled.aside`
   background-color: #f5f5f5;
   padding: 10px;
   width: 20%;
-  height: 100%;
+  height: 100vh;
   text-align: left;
+  overflow: hidden;
   @media (max-width: 850px) {
     width: 152px;
   }

@@ -10,7 +10,7 @@ export * from "../lib/types/Row.types";
 export * from "../lib/types/Sidebar.types";
 export * from "../lib/types/Title.types";
 // Utils types
-export * from "../utils/types/sidebarList.types";
+export * from "../utils/types/Lists.types";
 
 export type Justify = "start" | "center" | "space-between" | "space-around" | "space-evenly" | "end";
 export type Align = "stretch" | "center" | "start" | "end";

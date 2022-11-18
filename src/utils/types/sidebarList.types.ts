@@ -1,1 +1,0 @@
-export type SidebarListType = string[];

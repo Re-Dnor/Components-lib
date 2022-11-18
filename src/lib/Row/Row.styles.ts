@@ -7,5 +7,5 @@ export const StyledRow = styled.div<RowProps>`
   justify-content: ${(props) => props.justifyContent};
   width: ${(props) => props.width};
   gap: ${(props) => (props.gap ? "10px" : null)};
-  margin: 10px 0;
+  margin: 10px;
 `;
