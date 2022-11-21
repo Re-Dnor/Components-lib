@@ -12,8 +12,7 @@ export const Default: ComponentStoryObj<typeof Input> = {
   args: {
     type: "name",
     name: "name",
-    value: "Mike",
-    large: false
+    label: "Name"
   }
 };
 
