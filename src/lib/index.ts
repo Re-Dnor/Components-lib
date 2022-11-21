@@ -7,3 +7,4 @@ export * from "./Row/Row";
 export * from "./Sidebar/Sidebar";
 export * from "./Title/Title";
 export * from "./Checkbox/Checkbox";
+export * from "./Modal/Modal";
