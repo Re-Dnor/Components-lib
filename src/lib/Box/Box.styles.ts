@@ -8,5 +8,5 @@ export const StyledBox = styled.div<BoxProps>`
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;

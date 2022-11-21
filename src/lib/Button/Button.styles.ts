@@ -1,18 +1,15 @@
 import styled from "styled-components";
-import { ButtonProps, Variant_Color } from "../types/Button.types";
+import { ButtonProps } from "../types/Button.types";
 
 export const StyledButton = styled.button<ButtonProps>`
   background-color: var(
-    --${(props) => (props.disabled ? "gray" : props.variant ?? "primary")}
+    --${(props) => (props.disabled ? "gray" : props.color ?? "primary")}
   );
   border-radius: 6px;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   color: var(
-    ${(props) =>
-      props.variant && (props.variant === Variant_Color.Success ?? props.variant === Variant_Color.Warning)
-        ? "--dark"
-        : "--light"}
+    ${(props) => (props.color && (props.color === "success" ?? props.color === "warning") ? "--dark" : "--light")}
   );
   cursor: ${(props) => (props.disabled ? "default" : "pointer")};
   font-weight: 600;

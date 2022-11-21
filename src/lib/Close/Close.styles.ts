@@ -5,7 +5,7 @@ export const StyledClose = styled.button<CloseProps>`
   width: 40px;
   height: 40px;
   border: 0;
-  background-color: white;
+  background-color: var(--light);
   position: relative;
   z-index: 1;
   margin: 10px auto;
@@ -13,7 +13,7 @@ export const StyledClose = styled.button<CloseProps>`
 
   &: before {
     content: '+';
-    color: var(--${(props) => props.color});
+    color: var(--${(props) => (props.color ? props.color : "primary")});
     position: absolute;
     z-index: 2;
     transform: rotate(45deg);
@@ -32,7 +32,7 @@ export const StyledClose = styled.button<CloseProps>`
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    background: var(--${(props) => props.color});
+    background: var(--${(props) => (props.color ? props.color : "primary")});
     z-index: 1;
     transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
     transform: scale(0.01);
