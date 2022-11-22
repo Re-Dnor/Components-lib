@@ -15,7 +15,16 @@ function Content({ currentForm }: ContentProps) {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: "80%", height: "100%", overflowY: "auto" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+        height: "100%",
+        overflowY: "auto",
+        marginLeft: "5px"
+      }}
+    >
       {renderCurrentForm(currentForm)}
     </div>
   );

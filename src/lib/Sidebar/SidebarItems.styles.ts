@@ -3,13 +3,13 @@ import { SidebarBtnProps } from "../types/Sidebar.types";
 
 export const StyledSidebarSpan = styled.span`
   display: block;
-  padding: 20px;
+  padding: 10px;
   &: before {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
     content: "";
-    width: 4px;
+    width: 2px;
     height: 0;
     position: absolute;
     transition: all 0.4s linear;
@@ -20,7 +20,7 @@ export const StyledSidebarSpan = styled.span`
     bottom: 0;
     transition-duration: 0.4s;
     content: "";
-    width: 4px;
+    width: 2px;
     height: 0;
     position: absolute;
     transition: all 0.4s linear;
@@ -39,7 +39,7 @@ export const StyledSidebarBtn = styled.button<SidebarBtnProps>`
   border: 1px solid black;
   color: var(--${(props) => (props.active ? "light" : "dark")});;
   text-shadow: 0px 0px 5px white;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   background: var(--${(props) => (props.active ? "primary" : "light")});
   &: after {
@@ -48,7 +48,7 @@ export const StyledSidebarBtn = styled.button<SidebarBtnProps>`
     transition-duration: 0.4s;
     content: "";
     width: 0;
-    height: 4px;
+    height: 2px;
     position: absolute;
     transition: all 0.4s linear;
     background: var(--primary);
@@ -59,7 +59,7 @@ export const StyledSidebarBtn = styled.button<SidebarBtnProps>`
     transition-duration: 0.4s;
     content: "";
     width: 0;
-    height: 4px;
+    height: 2px;
     position: absolute;
     transition: all 0.4s linear;
     background: var(--primary);

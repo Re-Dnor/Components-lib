@@ -26,7 +26,7 @@ function TestForm() {
         <Input label="Password confirm" name="confirm" type="password" required />
       </Row>
       <Row justifyContent="center">
-        <MultiText placeholder="Lorem ipsum test test" height={5}></MultiText>
+        <MultiText placeholder="Lorem ipsum test test" rows={5}></MultiText>
       </Row>
       <Button type="submit">Test sign up</Button>
     </Box>
